@@ -4,7 +4,9 @@ body {
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background: #ec008c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   overflow-x: hidden;
 }
@@ -91,7 +93,7 @@ h1 {
   gap: 1rem;
 }
 
-.member-page form h5 {
+.member-page form h4 {
   margin-top: 0;
   color: #7700ee;
 }
@@ -111,7 +113,7 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   color: #000;
-  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
+  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.2);
 }
 
 button {
